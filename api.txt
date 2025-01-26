@@ -1,0 +1,17 @@
+/add_customer POST {"name":<string>, "city":<string>,"age":<integer>}
+/add_book POST {"name":<string>, "author":<string>,"year":<integer>,"booktype":<integer>(optional)}
+/delete_customer/<int:customer_id> DELETE
+/delete_book/<int:book_id> DELETE
+/create_loan  {"book_id":<integer>,"customer_id":<integer>} POST
+/display_late_loans GET
+/display_all_loans  GET
+/return_by_loanid/<int:loanid> PUT
+/display_all_books GET
+/display_all_customers GET
+/Find_books_by_name/<string:book_name> GET
+/Find_active_loan_by_customer_id/<int:custid>  GET
+
+Test API`s:
+/add50books  POST
+/add10customers  POST
+/create_late_loan POST {"book_id":<integer>,"customer_id":<integer>}

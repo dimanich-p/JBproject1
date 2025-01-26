@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+
+/* Button Area */
+#button-area {
+    background-color: lightgreen;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Output Area */
+#output-area {
+    background-color: lightgray;
+    padding: 15px;
+    margin: 20px;
+    min-height: 150px;
+    border-radius: 5px;
+}
+
+/* Popup Modal */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    z-index: 1000;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup input {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: lightblue;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Button Styling */
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Loan/Return Book Buttons */
+button.loan {
+    background-color: green;
+    color: white;
+}
+
+button.return {
+    background-color: red;
+    color: white;
+}
