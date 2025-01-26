@@ -1,4 +1,5 @@
  # Simple library managment web app (main functions:add/remove books/customers, create loan, return book)
+ #### Deleting a book or a customer will chain deletion in loans table (orphan will be deleted)
  ## Used technics: Flask,SQLalchemy,Axios.
  ## Create the database by runninig database.py
  #### DB diagram attached
